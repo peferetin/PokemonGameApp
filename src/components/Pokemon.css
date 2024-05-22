@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .pokemon-container {
+  text-align: center;
+  border: 15px solid #f44e3f;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #000000;
+}
+
+h3 {
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+.pokemon-image {
+  width: 500px;
+  height: 500px;
+  border: 10px solid green;
+}
+
+.stats-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: start;
+  margin: 30px;
+}
+.buttons{
+  display: flex;
+  justify-content:space-evenly;
+  margin: 30px;
+} */
+
+/* .pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+}
+
+.stats-pokemon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  background-color: #4CAF50;
+  height: 20px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.bar.hp {
+  width: calc((100% / 255) * var(--hp));
+}
+
+.bar.special-attack,
+.bar.special-defense {
+  width: calc((100% / 255) * var(--special));
+}
+
+.bar.defense {
+  width: calc((100% / 255) * var(--defense));
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+} */
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+}
+
+.pokemon-image {
+  width: 380px;
+  height: 380px;
+  border: 8px solid green;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px;
+}
+
+.stats-pokemon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.bar {
+  box-sizing: border-box;
+  height: 20px;
+  width: 0;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.bar.hp {
+  background-color: greenyellow;
+  width: calc((100% / 100) * var(--hp));
+  box-sizing: border-box;
+}
+
+.bar.ability {
+  width: calc((30% / 2) * var(--ability)); /* assuming max 2 abilities */
+  background-color: yellow;
+}
+
+.bar.moves {
+  background-color: rgba(102, 102, 229, 0.935);
+  width: calc((70% / 100) * var(--moves)); /* assuming max 100 moves */
+}
+
+.bar.stat-0 {
+  background-color: red;
+  width: calc(
+    (100% / 120) * var(--stat-0)
+  ); /* assuming max 255 for each stat */
+}
+
+.bar.stat-1 {
+  background-color: green;
+  width: calc(
+    (100% / 120) * var(--stat-1)
+  ); /* assuming max 255 for each stat */
+}
+
+.bar.stat-2 {
+  background-color: red;
+  width: calc((100% / 40) * var(--stat-2)); /* assuming max 255 for each stat */
+}
+.bar.stat-3 {
+  background-color: green;
+  width: calc((100% / 50) * var(--stat-3)); /* assuming max 255 for each stat */
+}
+.bar.stat-4 {
+  background-color: aquamarine;
+  width: calc((99% / 100) * var(--stat-4)); /* assuming max 255 for each stat */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.hp-bar {
+  width: 70%;
+  /* background-color: #f3f3f3; */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.hp-bar-inner {
+  height: 20px;
+  width: 80%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.hp-bar-inner.low {
+  background-color: #ffa500; /* Orange */
+}
+
+.hp-bar-inner.critical {
+  background-color: #ff0000; /* Red */
+}
